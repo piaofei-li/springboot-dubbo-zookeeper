@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoController {
 
     /**
-     * loadbalance 设置负载均衡的方式
+     * loadbalance 设置负载均衡的方式（局部设置负再均衡）
      *      random：RandomLoadBalance:权重随机调用(dubbo中默认使用的方式)
      *          如果服务多实例权重相同，则进行随机调用；如果权重不同，按照总权重取随机数
      *      roundrobin：RoundRobinLoadBalance:权重轮询调度算法

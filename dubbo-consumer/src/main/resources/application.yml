@@ -9,6 +9,7 @@ dubbo:
   registry:
     address: zookeeper://127.0.0.1:2181
   consumer:
+    # 全局性设置负载均衡方式
     loadbalance: leastactive
 
 
