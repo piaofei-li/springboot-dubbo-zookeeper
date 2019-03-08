@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: dubbo-provider-3
+
+project:
+  service:
+    version: 1.0.0
+dubbo:
+  scan:
+    base-packages: com.middol.dubboprovider3.service.impl
+  application:
+    name: ${spring.application.name}
+  protocol:
+    port: 20883
+    name: dubbo
+    id: dubbo
+  registry:
+    address: zookeeper://127.0.0.1:2181
