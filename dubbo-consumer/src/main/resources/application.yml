@@ -12,7 +12,6 @@ dubbo:
     # 全局性设置负载均衡方式
     loadbalance: leastactive
 
-
 project:
   service:
     version: 1.0.0
